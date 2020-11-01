@@ -1,0 +1,13 @@
+{
+    "name": "simple_server",
+    "description": "A very simple Node.JSapp",
+    "author": "Raymond SO <rso@ouhk.edu.hk>",
+    "version": "0.0.1",
+    "dependencies": {
+        "upper-case-first": "2.0.1"
+    },
+    "engine": "node >= 0.10.0",
+    "scripts": {
+        "start": "node Q4-server.js"
+    }
+}
