@@ -71,7 +71,7 @@ const handle_incoming_request = (req, res) => {
 					req.on('end', () => {
 						let postdata = qs.parse(data);
 						var obj = new SimpleInterests(postdata.p, postdata.r,postdata.t); 
-						if (parsedURL.query.format == 'json') {
+						if (postdata.format == 'json') {
 							res.writeHead(200, {"Content-Type" : "text/json"}); 
 							res.end(JSON.stringify(obj));
 						} else {
